@@ -29,6 +29,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        /* Additional styles for skill icons within cards */
+        .skill-icons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .skill-icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .skill-icon-item img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 0.5rem;
+            object-fit: contain;
+        }
+
+        .skill-icon-item p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,107 +76,134 @@
         </ul>
     </nav>
 
-    <!-- hard skills -->
+    <!-- Skills -->
     <section>
         <h2 class="main-title-large center padding">Skills</h2>
     </section>
 
-    <section class="grid-system-2 w-900 padding">
-        <section>
-            <h3 class="main-title">Your title here</h3>
-            <section class="skills">
-                <ul class="no-bullet-list no-padding-list-item">
-                    <li>
-                        <p>html</p>
-                        <span class="progress-bar"><span class="html"></span></span>
-                    </li>
-                    <li>
-                        <p>css</p>
-                        <span class="progress-bar"><span class="css"></span></span>
-                    </li>
-                    <li>
-                        <p>javascript</p>
-                        <span class="progress-bar"><span class="javascript"></span></span>
-                    </li>
-                    <li>
-                        <p>php, mysql</p>
-                        <span class="progress-bar"><span class="php"></span></span>
-                    </li>
-                </ul>
-            </section>
+    <!-- Technical Skills and Libraries Row -->
+    <section class="wrapper">
+        <section class="column card justify flex">
+            <p class="padding bold center">Technical Skills</p>
+            <div class="skill-icons-grid">
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                    <p>PHP</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+            </div>
         </section>
-        <section class="justify">
-            <h3 class="main-title">Your title here</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ut minima odio quisquam voluptatem nobis
-                voluptates laudantium suscipit vel, veritatis, aspernatur doloremque officiis animi voluptate quia
-                magnam. Dolorum, assumenda accusantium? </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed non, atque quam quaerat, ea
-                dignissimos velit placeat iure obcaecati sapiente, dolorum ut assumenda dolore culpa odit aspernatur
-                alias. Aliquam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero deleniti sed eius porro et
-                exercitationem quae!</p>
-        </section>
-    </section>
-
-    <!-- soft skills -->
-    <section class="grid-system-2 w-900 padding">
-        <section class="justify grid-flip">
-            <h3 class="main-title">Your title here</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas assumenda porro alias repellendus
-                deleniti cumque similique vel quae provident unde explicabo reiciendis fugit, itaque iure sunt.
-                Voluptas, fugiat. Quis, consequuntur.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia placeat rerum ipsum magnam quos,
-                dolorum ducimus, doloremque molestias, ipsa neque explicabo assumenda totam ab nesciunt voluptate
-                fugiat tempore fuga at.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo suscipit aspernatur officiis
-                aliquam tempore, impedit provident. </p>
-        </section>
-        <section>
-            <h3 class="main-title">Your title here</h3>
-            <section class="skills">
-                <ul class="no-bullet-list no-padding-list-item">
-                    <li>
-                        <p>communication</p>
-                        <span class="progress-bar"><span class="comm-adapt"></span></span>
-                    </li>
-                    <li>
-                        <p>teamplayer, adaptability</p>
-                        <span class="progress-bar"><span class="team-player"></span></span>
-                    </li>
-                    <li>
-                        <p>problem solving</p>
-                        <span class="progress-bar"><span class="problem-solving"></span></span>
-                    </li>
-                    <li>
-                        <p>open-minded</p>
-                        <span class="progress-bar"><span class="open-minded"></span></span>
-                    </li>
-                </ul>
-            </section>
+        
+        <section class="column card justify flex">
+            <p class="padding bold center">Libraries & Frameworks</p>
+            <div class="skill-icons-grid">
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                    <p>Pandas</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                    <p>NumPy</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery">
+                    <p>jQuery</p>
+                </div>
+            </div>
         </section>
     </section>
 
-    <!--future plans in skill development-->
-    <!-- tell about how you improve your knowledge, if you have something important, the "colorful-letter" class may come handy, use it anywhere -->
-    <section class="w-900">
-        <section class="baby-pink-light">
-            <h3 class="main-title padding-top">Future Plans in Skill Development</h3>
-            <section class="justify">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci eum asperiores, itaque autem deserunt
-                    corrupti, optio sit qui illum, voluptate sunt quos hic doloribus praesentium repellendus tempora
-                    suscipit cum facere.
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique voluptatem quaerat magnam
-                    fugiat autem adipisci nulla rem quasi, aut distinctio facere earum aliquid dolorem nemo nihil, quidem
-                    quae nostrum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facilis inventore beatae, dicta
-                    commodi odio dolorum debitis, magni veniam sed similique, iusto labore dolore? Iure minima velit amet
-                    soluta quo!
-                </p>
-            </section>
+    <!-- Tools and Professional Skills Row -->
+    <section class="wrapper">
+        <section class="column card justify flex">
+            <p class="padding bold center">Tools & Software</p>
+            <div class="skill-icons-grid">
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <p>Git</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                    <p>VS Code</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="Excel">
+                    <p>Excel</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+                    <p>Photoshop</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    <p>Figma</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="column card justify flex">
+            <p class="padding bold center">Professional Skills</p>
+            <div class="skill-icons-grid">
+                <div class="skill-icon-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Communication">
+                    <p>Communication</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png" alt="Teamwork">
+                    <p>Teamwork</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2620/2620400.png" alt="Problem Solving">
+                    <p>Problem Solving</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3524/3524335.png" alt="Adaptability">
+                    <p>Adaptability</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="Open-minded">
+                    <p>Open-minded</p>
+                </div>
+                <div class="skill-icon-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2620/2620445.png" alt="Leadership">
+                    <p>Leadership</p>
+                </div>
+            </div>
         </section>
     </section>
 
