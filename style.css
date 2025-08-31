@@ -10,7 +10,8 @@ html{
 }
 
 body {
-    background-color: rgba(253, 244, 244, 30%);
+    background-color: #ffffff; /* white */
+    color: #000000;           /* black text */
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0px;
 }
@@ -674,7 +675,7 @@ footer{
 }
 
 /* DARK THEME */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     body {
         background-color: rgba(45, 45, 45, 1);
         color: white;
